@@ -16,14 +16,29 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
 
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-<div id="page" class="site">
+<body <?php body_class('bg-light'); ?>>
+<div id="page" class="site d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom box-shadow">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'rjulab' ); ?></a>
-
+<h5 class="my-0 mr-md-auto font-weight-normal"><a class="navbar-brand text-dark" href="https://rjulab.com">
+                    RJU Lab
+                </a></h5>
+        
+      <nav class="my-2 my-md-0 mr-md-3">
+                <a class="p-2 text-dark" href="#">Connect</a>
+        <a class="p-2 text-dark" href="#">Blog</a>
+        <a class="p-2 text-dark" href="#">Forum</a>
+      </nav>
+        <div class="btn-group">
+                        <a class="btn btn-outline-primary float-right ml-2" href="https://ejanakpur.com/login">Sign In</a>
+            <a class="btn btn-danger float-right ml-2" href="https://ejanakpur.com/start">Sign Up</a>
+                    </div>
+    </div>
+    <div id="page" class="site">
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
